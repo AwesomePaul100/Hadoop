@@ -93,7 +93,7 @@ Hello hello hello HELLO hello!123
 ```
 And by submitting a Hadoop job and applying Reduce step, it generates an inverted index as below:
 ```shell
-bye    file01: 1,  The total '#' of files this word appears in is: 1
+bye    file01: 1,  The total # of files this word appears in is: 1
 goodbye    file02: 1,  The total # of files this word appears in is: 1
 hadoop    file02: 2,  The total # of files this word appears in is: 1
 hello    file02: 1, file03: 5, file01: 1,  The total # of files this word appears in is: 3
