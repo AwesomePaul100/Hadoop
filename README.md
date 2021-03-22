@@ -35,7 +35,8 @@ $ bin/hadoop
 $ gedit etc/hadoop/core-site.xml
  ```
  In core-site.xml
-```shell<configuration>
+```shell
+<configuration>
     <property>
     <name>fs.defaultFS</name>
     <value>hdfs://localhost:9000</value>
@@ -44,11 +45,13 @@ $ gedit etc/hadoop/core-site.xml
 ```
 In hdfs-site.xml
 
-```shell<configuration>
+```shell
+<configuration>
 <property>
 <name>dfs.replication</name>
 <value>1</value>
 </property>
+</configuration>
 ```
 
 6. Check ssh to localhost
