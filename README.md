@@ -94,7 +94,7 @@ Hello World Hadoop Goodbye World HADOOP
 ```shell
 #file03
 $ bin/hadoop dfs -cat /user/hadoop/filecount/input/file03
-Hello hello hello HELLO hello!123
+Hello hello hello HELLO hello! 12345
 ```
 And by submitting a Hadoop job and applying Reduce step, it generates an inverted index as below:
 ```shell
