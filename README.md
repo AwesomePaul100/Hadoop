@@ -12,7 +12,7 @@
 
 * [Install Hadoop](http://www.apache.org/dyn/closer.cgi/hadoop/common/)
 
-4. Setting Path Names
+4. Setting Path Names by performing the following commands:
 ```shell
 echo $JAVA_HOME
 echo $HADOOP_CLASSPATH
@@ -30,7 +30,7 @@ Then try the following command:
  ```shell
 $ bin/hadoop
  ```
- 5. Configurations
+ 5. Configurations, open the following files to configure them:
  ```shell
 $ gedit etc/hadoop/core-site.xml
  ```
@@ -70,7 +70,7 @@ $ sbin/start-dfs.sh
 $ sbin/stop-dfs.sh
 ```
 ### Setting up and runing a simple Hadoop job
-9. Executing the program
+9. Executing the program by performing the following commands:
 ```shell
 $ bin/hadoop com.sun.tools.javac.Main FileCounting.java
 $ jar cf filecounting.jar FileCounting*.class
