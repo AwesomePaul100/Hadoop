@@ -1,5 +1,6 @@
 # Hadoop MapReduce FileCounting
-
+This file counting program prints the words (case-insensitive with no special characters or numbers) with the name of the file it was in
+and the number of times it occurs in that file, and then the total number of files that word appears in.
 
 ## Local (Standalone) Mode
 
