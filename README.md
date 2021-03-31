@@ -81,7 +81,8 @@ $ bin/hadoop dfs -cat /user/hadoop/filecount/output/part*
 ```
 
 This simple Hadoop job, gets three text files from the "input" folder, howerver you could put more or less.
-You need to make a input folder:
+
+But first you need to make a input folder:
 ```shell
 bin/hdfs dfs –mkdir /user/hadoop/filecount/input
 ```
