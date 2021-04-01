@@ -107,7 +107,7 @@ Hello World Hadoop Goodbye World HADOOP
 $ bin/hadoop dfs -cat /user/hadoop/filecount/input/file03
 Hello hello hello HELLO hello! 12345
 ```
-And by submitting a Hadoop job, the java code has a mapper class that maps input from the files with the words and the files they appear in (from the setup method that uses FileSplit), then there is a semi-reducer class that count the number of times the word appears in the particular file.  The applying Reduce step to attach the string to and the value of the counter that displays in output the total # of files the word appears in. 
+And by submitting a Hadoop job, the java code has a mapper class that maps input from the files with the words and the files they appear in (from the setup method that uses FileSplit), then there is a semi-reducer class that counts the number of times the word appears in the particular file.  Then, applying the Reduce step to attach the string to and the value of the counter that displays in output the total # of files the word appears in. 
 It generates the output an below:
 (There is a # in the output, so that is not a comment like it looks like in github.)
 ```shell
