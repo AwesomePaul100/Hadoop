@@ -5,7 +5,7 @@ and the number of times it occurs in that file, and then the total number of fil
 ## Local (Standalone) Mode
 
 
-### Seting up Hadoop
+### Setting up Hadoop
 
 1. Linux System/ Virtual Machine
 2. Java Must be installed in the system.
@@ -70,7 +70,7 @@ $ sbin/start-dfs.sh
 # The daemons can be stopped by typing the following command
 $ sbin/stop-dfs.sh
 ```
-### Setting up and runing a simple Hadoop job
+### Setting up and running a simple Hadoop job
 9. Executing the program by performing the following commands:
 ```shell
 $ bin/hadoop com.sun.tools.javac.Main FileCounting.java
@@ -110,7 +110,7 @@ Hello hello hello HELLO hello! 12345
 And by submitting a Hadoop job, the java code has a mapper class that maps input from the files with the words and the files they appear in (from the setup method that uses FileSplit), then there is a semi-reducer class that counts the number of times the word appears in the particular file.  Then, applying the Reduce step to attach the string to and the value of the counter that displays in output the total # of files the word appears in. 
 It generates the output an below:
 
-(There is a # in the output, so that is not a comment like it looks like in github.)
+(There is a # in the output, so that is not a comment like it looks like in GitHub.)
 ```shell
 bye    file01: 1,  The total # of files this word appears in is: 1
 goodbye    file02: 1,  The total # of files this word appears in is: 1
@@ -118,7 +118,7 @@ hadoop    file02: 2,  The total # of files this word appears in is: 1
 hello    file02: 1, file03: 5, file01: 1,  The total # of files this word appears in is: 3
 world    file01: 2, file02: 2,  The total # of files this word appears in is: 2
 ```
-When re-runing this Hadoop code, please make sure you go into the hadoop folder and delete the jar file and anything else related to the program like the '.class' file.
+When reruning this Hadoop code, please make sure you go into the hadoop folder and delete the jar file and anything else related to the program like the '.class' file.
 ```shell
 # Remove the output before re-running the code.
 $ bin/hadoop fs -rm /user/hadoop/filecount/output/*
